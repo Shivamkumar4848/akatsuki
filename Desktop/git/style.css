@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.imgcolumn{
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topbar{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background: black;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo a{
+    width: 20px;
+    float: left;
+    
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+    display: inline-block;
+    position: relative;
+}
+
+a:after {
+
+        position: absolute;
+        background: none repeat scroll 0 0 transparent;
+        content: "";
+        left: 50%;
+        bottom: 0;
+        display: block;
+        width: 0;
+        height: 3px;
+        background: rgba(249, 253, 4, 0.856);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+
+a:hover{
+    color: rgb(255, 13, 13); 
+}
+
+a:hover:after{
+       width: 100%;
+       left: 0;
+    }
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url(background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    top: 500px;
+    background: rgb(184, 0, 0);
+    height: 160px;
+}
+
+.heading{
+    width: 100%;
+    position: relative;
+    top: 700px;
+    background: black;
+    height: auto;
+    color: white;
+}
+
+.heading h2{
+    font-family: cursive;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+
+.content h2{
+    font-family: cursive;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+
+.mem{
+    width: 100%;
+    position: relative;
+    top: 700px;
+    background: black;
+    height: auto;
+}
+
+@media screen and (min-width: 760px){
+    .mem{
+        display: flex;
+    }
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.mem h2{
+    font-family: cursive;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+
+.deg{
+    width: 300px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background: rgb(184, 0, 0);
+}
+
+.deg1{
+    width: 50%;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background: rgb(184, 0, 0);
+    float: left;
+}
+
+.deg2{
+    width: 50%;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background: rgb(184, 0, 0);
+    float: right;
+}
+
+h3{
+    font-family: cursive;
+    color: rgba(249, 253, 4, 0.856);
+}
+
+.cont{
+    width: 100%;
+    position: relative;
+    top: 700px;
+    background: rgba(184, 0, 0);
+    height: auto;
+}
+
+
+.cont h2{
+    font-family: cursive;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    font-size: 40px;
+    margin: 0;
+    color: rgb(251, 255, 40);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-synthesis: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+#contact {
+  background: rgb(3, 3, 3);
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: rgba(218, 51, 0, 0.904);
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: rgb(0, 0, 0);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
